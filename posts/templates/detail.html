@@ -10,7 +10,7 @@
 <p>{{post.created_at}}</p>
 <p>{{post.updated_at}}</p>
 
-<a href="">edit</a>
+<a href="{% url 'posts:update' id=post.id %}">edit</a>
 <a href="{% url 'posts:delete' id=post.id %}">delete</a>
 
 {%endblock%}
